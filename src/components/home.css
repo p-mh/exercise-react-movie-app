@@ -1,0 +1,45 @@
+.home {
+}
+
+.home .latest-movies {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+
+.home .latest-movies .movie {
+  flex: 1 1 20%;
+  min-width: 200px;
+  position: relative;
+  margin: 10px;
+}
+
+.home .latest-movies .movie img {
+  width: 100%;
+  display: block;
+}
+
+.home .latest-movies .movie img:hover {
+  opacity: 0;
+}
+
+.home .latest-movies .movie .movie-infos {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+}
+
+.home .latest-movies .movie .movie-infos h2 {
+  max-width: 80%;
+  font-family: 'Forum', cursive;
+  text-align: center;
+}

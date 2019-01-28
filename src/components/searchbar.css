@@ -1,0 +1,44 @@
+.searchbar {
+  width: 50%;
+  min-width: 350px;
+  margin: 0 auto 50px auto;
+  position: relative;
+  border: #000 1px solid;
+  padding: 10px;
+  display: flex;
+}
+
+.searchbar input {
+  width: 100%;
+  border: none;
+  margin-left: 10px;
+}
+
+.searchbar input:focus {
+  outline: none;
+}
+
+.searchbar .results {
+  position: absolute;
+  background-color: #333;
+  z-index: 1;
+  width: 100%;
+  text-align: left;
+  top: 100%;
+  left: -1px;
+  border: #000 1px solid;
+}
+
+.searchbar .results a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.searchbar .results a p {
+  padding: 10px;
+  margin: 0;
+}
+
+.searchbar .results a p.highlited {
+  background-color: #666;
+}
